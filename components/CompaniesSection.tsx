@@ -17,7 +17,7 @@ const companies = [
   {
     name: 'Noctuse',
     description: 'Alt-House Canadian Duo',
-    url: 'https://noctuse.com',
+    url: 'https://linktr.ee/noctuse',
     image: '/noctuse.png'
   }
 ]
