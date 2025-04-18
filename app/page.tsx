@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import CompaniesSection from '@/components/CompaniesSection'
+import AnimatedText from '@/components/AnimatedText'
 
 export default function Home() {
   return (
@@ -15,8 +15,8 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <CompaniesSection />
+      
+      <AnimatedText />
     </main>
   )
 } 

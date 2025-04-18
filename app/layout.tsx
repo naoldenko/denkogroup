@@ -1,14 +1,13 @@
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import ScrollIndicator from '@/components/ScrollIndicator'
 
-const spaceGrotesk = Space_Grotesk({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-garet'
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins'
 })
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Denko Group',
@@ -50,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`scroll-smooth ${spaceGrotesk.variable}`}>
-      <body className={`${inter.className} bg-white text-black`}>
+    <html lang="en" className={`scroll-smooth ${poppins.variable}`}>
+      <body className={`${poppins.className} bg-[#ff3f3f] text-white`}>
         {children}
         <Footer />
         <ScrollIndicator />

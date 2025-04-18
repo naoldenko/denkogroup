@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased bg-brand-red text-white;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply tracking-tight;
+    @apply tracking-tight font-poppins font-bold;
   }
 }
 
@@ -18,11 +18,11 @@
   }
   
   .btn-primary {
-    @apply bg-black text-white hover:bg-gray-800;
+    @apply bg-white text-brand-red-700 hover:bg-gray-100;
   }
   
   .btn-outline {
-    @apply border border-black text-black hover:bg-black hover:text-white;
+    @apply border border-white text-white hover:bg-white hover:text-brand-red-700;
   }
 }
 
@@ -37,4 +37,19 @@
 
 .animate-scroll-down {
   animation: scroll-down 1.5s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
 } 
