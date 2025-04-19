@@ -40,6 +40,25 @@ export const metadata = {
         url: '/favicon_io/site.webmanifest'
       }
     ]
+  },
+  openGraph: {
+    title: 'Denko Group',
+    description: 'Tech, Mental Health, Entertainment',
+    images: [
+      {
+        url: '/denko-group-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Denko Group Logo'
+      }
+    ],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Denko Group',
+    description: 'Tech, Mental Health, Entertainment',
+    images: ['/denko-group-logo.png']
   }
 }
 
