@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Denko Group',
-  description: 'Tech, Mental Health, and Entertainment',
+  description: 'Tech, Healthcare, and Entertainment',
   icons: {
     icon: [
       {
@@ -43,23 +43,38 @@ export const metadata = {
   },
   openGraph: {
     title: 'Denko Group',
-    description: 'Tech, Mental Health, Entertainment',
+    description: 'Tech, Healthcare, Entertainment',
+    url: 'https://denkogroup.com',
     images: [
       {
-        url: '/denko-group-logo.png',
+        url: 'https://denkogroup.com/denko-group-logo.png',
         width: 1200,
         height: 630,
         alt: 'Denko Group Logo'
       }
     ],
-    type: 'website'
+    type: 'website',
+    siteName: 'Denko Group'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Denko Group',
-    description: 'Tech, Mental Health, Entertainment',
-    images: ['/denko-group-logo.png']
-  }
+    description: 'Tech, Healthcare, Entertainment',
+    images: ['https://denkogroup.com/denko-group-logo.png'],
+    site: '@denkogroup'
+  },
+  linkedin: {
+    title: 'Denko Group',
+    description: 'Tech, Healthcare, Entertainment',
+    images: ['https://denkogroup.com/denko-group-logo.png']
+  },
+  instagram: {
+    title: 'Denko Group',
+    description: 'Tech, Healthcare, Entertainment',
+    images: ['https://denkogroup.com/denko-group-logo.png'],
+    'instagram:creator': '@denkogrp',
+    'instagram:site': '@denkogrp'
+  },
 }
 
 export default function RootLayout({
